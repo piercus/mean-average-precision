@@ -13,12 +13,14 @@ npm install mean-average-precision
 ## prediction format
 
 Every prediction/ground truth objects should look like 
-<class_name> <confidence> <left> <top> <right> <bottom>
-```
+
+```javascript
 {
 	label: "car",
+	filename: "image1.jpg",
 	left: 22,
 	top: 34,
+	confidence: 0.9, // only for predictions
 	right: 231,
 	bottom: 78,
 }
@@ -26,7 +28,7 @@ Every prediction/ground truth objects should look like
 
 ## example
 
-```
+```javascript
 const mAP = require('mean-average-precision')
 const groundTruths = [{
 			filename: "image1.jpg",
