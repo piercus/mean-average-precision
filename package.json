@@ -1,0 +1,39 @@
+{
+  "name": "mean-average-precision",
+  "version": "1.0.0",
+  "description": "Calculate the mAP (mean average precision)",
+  "main": "index.js",
+  "scripts": {
+    "test": "xo && ava"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/piercus/mean-average-precision.git"
+  },
+  "keywords": [
+    "mean",
+    "metric",
+    "mAP",
+    "mean",
+    "average",
+    "mean",
+    "average",
+    "precision",
+    "object",
+    "detection",
+    "fscore",
+    "precision",
+    "recall"
+  ],
+  "author": "Pierre Colle <piercus@gmail.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/piercus/mean-average-precision/issues"
+  },
+  "homepage": "https://github.com/piercus/mean-average-precision#readme",
+  "devDependencies": {
+    "ava": "^0.25.0",
+    "semantic-release": "^15.9.16",
+    "xo": "^0.23.0"
+  }
+}
