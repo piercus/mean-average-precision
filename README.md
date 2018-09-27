@@ -1,3 +1,5 @@
+[![Build Status](https://travis-ci.org/piercus/mean-average-precision.svg?branch=master)](https://travis-ci.org/piercus/mean-average-precision)
+
 # mean-average-precision
 
 For explanation about mAP, please read https://github.com/Cartucho/mAP
