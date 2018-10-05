@@ -1,6 +1,6 @@
 {
   "name": "mean-average-precision",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "Calculate the mAP (mean average precision)",
   "main": "index.js",
   "scripts": {
