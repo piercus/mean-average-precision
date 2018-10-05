@@ -49,6 +49,6 @@ test('basic example', t => {
 		predictions
 	});
 
-	t.is(res, 0.5);
+	t.is(Math.round(res * 10000) / 10000, 0.5);
 });
 
