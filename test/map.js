@@ -52,3 +52,58 @@ test('basic example', t => {
 	t.is(Math.round(res * 10000) / 10000, 0.5);
 });
 
+test('test case: same filename and label for prediction and groundTruth', t => {
+	const groundTruths = [{
+		filename: 'image1.jpg',
+		label: '4_whi_bla',
+		left: 22,
+		top: 34,
+		right: 231,
+		bottom: 78
+	}];
+
+	const predictions = [{
+		filename: 'image1.jpg',
+		confidence: 1,
+		label: '4_whi_bla',
+		left: 25,
+		top: 38,
+		right: 201,
+		bottom: 90
+	}];
+	const res = mAP({
+		groundTruths,
+		predictions
+	});
+
+	t.true(res > 0);
+	t.true(res <= 1);
+})
+
+test('test case: same filename and different labels for prediction and groundTruth', t => {
+	const groundTruths = [{
+		filename: 'image1.jpg',
+		label: '4_whi_bla',
+		left: 22,
+		top: 34,
+		right: 231,
+		bottom: 78
+	}];
+
+	const predictions = [{
+		filename: 'image1.jpg',
+		confidence: 1,
+		label: '4_bla_whi',
+		left: 25,
+		top: 38,
+		right: 201,
+		bottom: 90
+	}];
+	const res = mAP({
+		groundTruths,
+		predictions
+	});
+
+	t.is(res, 0);
+})
+
