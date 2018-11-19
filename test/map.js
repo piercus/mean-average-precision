@@ -107,3 +107,30 @@ test('test case: same filename and different labels for prediction and groundTru
 	t.is(res, 0);
 })
 
+test('test case: filename and label are different between prediction and groundTruth', t => {
+	const groundTruths = [{
+		filename: 'image1.jpg',
+		label: '4_whi_bla',
+		left: 22,
+		top: 34,
+		right: 231,
+		bottom: 78
+	}];
+
+	const predictions = [{
+		filename: 'image2.jpg',
+		confidence: 1,
+		label: '4_bla_whi',
+		left: 25,
+		top: 38,
+		right: 201,
+		bottom: 90
+	}];
+	const res = mAP({
+		groundTruths,
+		predictions
+	});
+
+	t.is(res, 0);
+})
+
