@@ -119,7 +119,7 @@ test('5 apples example', t => {
 test('test case: groundTruth and prediction are undefined', t => {
 	const groundTruthsLabel = [];
 
-	const predictionsLabel = []
+	const predictionsLabel = [];
 
 	const res = ap({
 		groundTruthsLabel,
@@ -131,14 +131,13 @@ test('test case: groundTruth and prediction are undefined', t => {
 test('test case: groundTruth is defined and prediction is undefined', t => {
 	const groundTruthsLabel = [{
 		filename: 'image1.jpg',
-		label: '4_whi_bla',
 		left: 22,
 		top: 34,
 		right: 231,
 		bottom: 78
 	}];
 
-	const predictionsLabel = []
+	const predictionsLabel = [];
 
 	const res = ap({
 		groundTruthsLabel,
@@ -153,12 +152,11 @@ test('test case: groundTruth is undefined and prediction is defined', t => {
 
 	const predictionsLabel = [{
 		filename: 'image1.jpg',
-		label: '4_whi_bla',
 		left: 22,
 		top: 34,
 		right: 231,
 		bottom: 78
-	}]
+	}];
 
 	const res = ap({
 		groundTruthsLabel,
