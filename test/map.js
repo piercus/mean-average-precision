@@ -76,8 +76,8 @@ test('test case: same filename and label for prediction and groundTruth', t => {
 		predictions
 	});
 
-	t.true(res > 0);
-	t.true(res <= 1);
+	t.true(Math.round(res * 10000) / 10000 >= 0);
+	t.true(Math.round(res * 10000) / 10000 <= 1);
 });
 
 test('test case: same filename and different labels for prediction and groundTruth', t => {
@@ -134,7 +134,7 @@ test('test case: filename and label are different between prediction and groundT
 	t.is(res, 0);
 });
 
-test('test case: filename and label are same for prediction and groundTruth', t => {
+test('test case: different filenames and and same label between prediction and groundTruth', t => {
 	const groundTruths = [{
 		filename: 'image1.jpg',
 		label: '4_whi_bla',
@@ -160,4 +160,3 @@ test('test case: filename and label are same for prediction and groundTruth', t 
 
 	t.is(res, 0);
 });
-
