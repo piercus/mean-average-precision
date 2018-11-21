@@ -30,6 +30,9 @@ Every prediction/ground truth objects should look like
 
 ```javascript
 const mAP = require('mean-average-precision')
+
+const iouThreshold = 0.5;
+
 const groundTruths = [{
 			filename: "image1.jpg",
 			label: "car",
@@ -75,7 +78,8 @@ const predictions = [{
 	
 mAP({
 	groundTruths,
-	predictions
+	predictions,
+	iouThreshold
 });
 
 // returns 0.5
