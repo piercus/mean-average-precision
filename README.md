@@ -82,7 +82,6 @@ mAP({
 
 ## Set `iouThreshold`
 
-
 ```javascript
 // IoU Threshold default value is 0.5
 // you can change it using iouThreshold
