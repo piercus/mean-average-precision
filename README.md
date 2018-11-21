@@ -26,12 +26,10 @@ Every prediction/ground truth objects should look like
 }
 ```
 
-## example
+## Basic Example
 
 ```javascript
 const mAP = require('mean-average-precision')
-
-const iouThreshold = 0.5;
 
 const groundTruths = [{
 			filename: "image1.jpg",
@@ -78,9 +76,20 @@ const predictions = [{
 	
 mAP({
 	groundTruths,
-	predictions,
-	iouThreshold
+	predictions
 });
+```
 
-// returns 0.5
+## Set `iouThreshold`
+
+
+```javascript
+// IoU Threshold default value is 0.5
+// you can change it using iouThreshold
+
+mAP({
+	groundTruths,
+	predictions,
+	iouThreshold: 0.6
+});
 ```
