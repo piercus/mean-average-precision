@@ -92,3 +92,16 @@ mAP({
 	iouThreshold: 0.6
 });
 ```
+## List misclassified predictions
+
+```javascript
+// You can have more information 
+// on which predictions are considered as
+// misclassified by doing
+
+mAP.listMisclassified({
+	groundTruths,
+	predictions,
+	iouThreshold: 0.6
+});
+```
