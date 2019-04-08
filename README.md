@@ -105,3 +105,20 @@ mAP.listMisclassified({
 	iouThreshold: 0.6
 });
 ```
+## IoU
+
+```javascript
+// You can use the IoU function directly using
+
+mAP.iou({
+	left: 22,
+	top: 34,
+	bottom: 38,
+	right: 30
+},{
+	left: 21,
+	top: 32,
+	bottom: 40,
+	right: 32
+});
+```
