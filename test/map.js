@@ -198,3 +198,46 @@ test('test case: if iouThreshold defined ', t => {
 	t.true(res >= 0);
 	t.true(res <= 1);
 });
+
+test('test case: if perLabel defined should return details per labels ', t => {
+	const groundTruths = [{
+		filename: 'image1.jpg',
+		label: 'car',
+		left: 22,
+		top: 34,
+		right: 231,
+		bottom: 78
+	}];
+
+	const predictions = [{
+		filename: 'image1.jpg',
+		confidence: 0.9,
+		label: 'car',
+		left: 25,
+		top: 38,
+		right: 201,
+		bottom: 90
+	}, {
+		filename: 'image1.jpg',
+		label: 'pedestrian',
+		confidence: 0.7,
+		left: 32,
+		top: 39,
+		right: 452,
+		bottom: 92
+	}];
+
+	const iouThreshold = 0.6;
+	const res = mAP({
+		groundTruths,
+		predictions,
+		iouThreshold,
+		perLabel: true
+	});
+	t.true(Array.isArray(res.aps));
+	t.true(res.aps.length === 2);
+	t.true(res.aps[0].label === 'car');
+	t.true(res.aps[1].label === 'pedestrian');
+	t.true(res.mAP >= 0);
+	t.true(res.mAP <= 1);
+});
