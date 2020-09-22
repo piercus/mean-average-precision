@@ -122,3 +122,18 @@ mAP.iou({
 	right: 32
 });
 ```
+
+## Other distance metrics
+
+You can use mean-average-precision implementation with other distance metrics by using
+
+```javascript
+// You can run it with for example an euclidian distance
+
+mAP({
+	groundTruths,
+	predictions,
+	dist: (pred, groundTruth) => Math.sqrt(((pred.x - groundTruth.x) * (pred.x - groundTruth.x)) + ((pred.y - groundTruth.y) * (pred.y - groundTruth.y))),
+	threshold: 10
+});
+```
