@@ -1,5 +1,5 @@
-const {apScore} = require('..');
 const test = require('ava');
+const {apScore} = require('..');
 
 const tolerance = 1e-3;
 test('apScore 4 els', t => {
