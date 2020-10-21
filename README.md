@@ -12,7 +12,7 @@ npm install mean-average-precision
 
 ## prediction format
 
-Every prediction/ground truth objects should look like 
+For bounding box mAP, every prediction/ground truth objects should look like 
 
 ```javascript
 {
@@ -136,4 +136,25 @@ mAP({
 	dist: (pred, groundTruth) => Math.sqrt(((pred.x - groundTruth.x) * (pred.x - groundTruth.x)) + ((pred.y - groundTruth.y) * (pred.y - groundTruth.y))),
 	threshold: 10
 });
+```
+
+## average precision score
+
+You can also access an average precision score, without any threshold or metrics by doing
+
+```javascript
+mAP.apScore( [{
+		gt: 0, 
+		confidence: 0.1
+	},{
+		gt: 0, 
+		confidence: 0.4
+	},{
+		gt: 1, 
+		confidence: 0.35
+	},{
+		gt: 1,
+		confidence: 0.8
+}]);
+// => 0.833333
 ```
