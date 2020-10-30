@@ -102,7 +102,7 @@ precision_recall_curve(y_true, y_scores)
 });
 
 test('apScore 2 els', t => {
-// import numpy as np
+// Import numpy as np
 // from sklearn.metrics import average_precision_score
 // y_true = np.array([0, 1])
 // y_scores = np.array([0.05462560995882594, 0.05462561875786798])
@@ -115,7 +115,7 @@ test('apScore 2 els', t => {
 		gt: 1,
 		confidence: 0.05462561875786798
 	}];
-	
+
 	const score = apScore(values);
 	t.true(Math.abs(score - 1) < tolerance);
 });
