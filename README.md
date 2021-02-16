@@ -146,6 +146,14 @@ mAP.iou({
 });
 ```
 
+## non max suppression
+
+```javascript
+mAP.nonMaxSuppression({
+	predictions
+});
+```
+
 ## Other distance metrics
 
 You can use mean-average-precision implementation with other distance metrics by using

@@ -1,0 +1,156 @@
+[{
+    "sources": [
+        {
+            "workerIdAndIteration": "private.eu-west-1.26ad835a9a3f9757-1",
+            "itemIndex": 1,
+            "height": 72,
+            "label": "horse",
+            "left": 926,
+            "top": 392,
+            "width": 155,
+            "iteration": 1,
+            "workerId": "private.eu-west-1.26ad835a9a3f9757"
+        },
+        {
+            "workerIdAndIteration": "private.eu-west-1.41ecc7beb65f4b05-1",
+            "itemIndex": 1,
+            "height": 74,
+            "label": "horse",
+            "left": 924,
+            "top": 387,
+            "width": 156,
+            "iteration": 1,
+            "workerId": "private.eu-west-1.41ecc7beb65f4b05"
+        }
+    ],
+    "consolidated": {
+        "label": "horse",
+        "left": 925,
+        "top": 389.5,
+        "width": 155.5,
+        "height": 73,
+        "confidence": 0.5880924318725669
+    },
+    "label": "horse"
+},
+{
+    "sources": [
+        {
+            "workerIdAndIteration": "private.eu-west-1.26ad835a9a3f9757-0",
+            "height": 63,
+            "label": "horse",
+            "left": 602,
+            "top": 409,
+            "width": 164,
+            "iteration": 0,
+            "workerId": "private.eu-west-1.26ad835a9a3f9757"
+        },
+        {
+            "workerIdAndIteration": "private.eu-west-1.208f7107c68c1a16-0",
+            "height": 58,
+            "label": "horse",
+            "left": 598,
+            "top": 409,
+            "width": 171,
+            "iteration": 0,
+            "workerId": "private.eu-west-1.208f7107c68c1a16"
+        },
+        {
+            "workerIdAndIteration": "private.eu-west-1.41ecc7beb65f4b05-0",
+            "height": 53,
+            "label": "horse",
+            "left": 599,
+            "top": 409,
+            "width": 155,
+            "iteration": 0,
+            "workerId": "private.eu-west-1.41ecc7beb65f4b05"
+        }
+    ],
+    "consolidated": {
+        "label": "horse",
+        "left": 599.6358847533309,
+        "top": 409,
+        "width": 163.79898093401252,
+        "height": 58.142127543567895,
+        "confidence": 0.7742981807328856
+    },
+    "label": "horse"
+},
+{
+    "sources": [
+        {
+            "workerIdAndIteration": "private.eu-west-1.26ad835a9a3f9757-1",
+            "height": 62,
+            "label": "horse",
+            "left": 604,
+            "top": 409,
+            "width": 165,
+            "iteration": 1,
+            "workerId": "private.eu-west-1.26ad835a9a3f9757"
+        },
+        {
+            "workerIdAndIteration": "private.eu-west-1.208f7107c68c1a16-1",
+            "height": 60,
+            "label": "horse",
+            "left": 599,
+            "top": 409,
+            "width": 171,
+            "iteration": 1,
+            "workerId": "private.eu-west-1.208f7107c68c1a16"
+        },
+        {
+            "workerIdAndIteration": "private.eu-west-1.41ecc7beb65f4b05-1",
+            "height": 52,
+            "label": "horse",
+            "left": 599,
+            "top": 408,
+            "width": 155,
+            "iteration": 1,
+            "workerId": "private.eu-west-1.41ecc7beb65f4b05"
+        }
+    ],
+    "consolidated": {
+        "label": "horse",
+        "left": 598,
+        "top": 411,
+        "width": 163,
+        "height": 58,
+        "confidence": 0.71
+    },
+    "label": "horse"
+},{
+    "sources": [
+        {
+            "workerIdAndIteration": "private.eu-west-1.26ad835a9a3f9757-1",
+            "itemIndex": 1,
+            "height": 73,
+            "label": "horse",
+            "left": 926,
+            "top": 392,
+            "width": 155,
+            "iteration": 1,
+            "workerId": "private.eu-west-1.26ad835a9a3f9757"
+        },
+        {
+            "workerIdAndIteration": "private.eu-west-1.41ecc7beb65f4b05-1",
+            "itemIndex": 1,
+            "height": 74,
+            "label": "horse",
+            "left": 924,
+            "top": 387,
+            "width": 158,
+            "iteration": 1,
+            "workerId": "private.eu-west-1.41ecc7beb65f4b05"
+        }
+    ],
+    "consolidated": {
+        "label": "horse",
+        "left": 923,
+        "top": 389.5,
+        "width": 155.5,
+        "height": 73,
+        "confidence": 0.56
+    },
+    "label": "horse"
+}
+]
