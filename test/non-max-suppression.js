@@ -35,7 +35,7 @@ test.serial('call nonMaxSuppression for bounding boxes', t => {
 	const removeList = nonMaxSuppression({
 		dist: customDist,
 		threshold: 0.25,
-		annotations,
+		predictions: annotations,
 		mapFn: contentToMapCompatible
 	});
 	t.is(removeList.length, 1);
@@ -46,7 +46,7 @@ test.serial('call nonMaxSuppression for bounding boxes with 3 crossing boxes', t
 	const removeList = nonMaxSuppression({
 		dist: customDist,
 		threshold: 0.25,
-		annotations: annotations2,
+		predictions: annotations2,
 		mapFn: contentToMapCompatible
 	});
 	t.is(removeList.length, 2);
@@ -58,7 +58,7 @@ test.serial('call nonMaxSuppression for bounding boxes with 3 crossing boxes but
 	const removeList = nonMaxSuppression({
 		dist: customDist,
 		threshold: 0.25,
-		annotations: annotations3,
+		predictions: annotations3,
 		mapFn: contentToMapCompatible
 	});
 	t.is(removeList.length, 2);
@@ -71,7 +71,7 @@ test.serial('call nonMaxSuppression for bounding boxes with 3 crossing boxes but
 	const removeList = nonMaxSuppression({
 		dist: ((a, b) => 1 - mAP.iou(a, b)),
 		threshold: 0.25,
-		annotations: annotations3,
+		predictions: annotations3,
 		mapFn: contentToMapCompatible
 	});
 	t.is(removeList.length, 1);
@@ -83,7 +83,7 @@ test.serial('call nonMaxSuppression for bounding boxes with 3 crossing boxes but
 	const removeList = nonMaxSuppression({
 		dist: ((a, b) => 1 - mAP.iou(a, b)),
 		threshold: 0.25,
-		annotations: annotations3,
+		predictions: annotations3,
 		mapFn: contentToMapCompatible
 	});
 	t.is(removeList.length, 1);
