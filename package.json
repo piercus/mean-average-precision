@@ -36,7 +36,7 @@
   "homepage": "https://github.com/piercus/mean-average-precision#readme",
   "devDependencies": {
     "ava": "^0.25.0",
-    "semantic-release": "^15.9.16",
+    "semantic-release": "^19.0.3",
     "xo": "^0.23.0"
   }
 }
